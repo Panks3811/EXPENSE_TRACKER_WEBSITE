@@ -41,7 +41,7 @@ app.get('/', function (req, res) {
     conn.query(sql, function(err, results){
         if(err) throw err;
 
-        res.send('<h1>Expense Data Sent....</h1>');
+        res.redirect('/show')
     });
 });
 
